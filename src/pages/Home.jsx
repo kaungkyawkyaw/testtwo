@@ -53,7 +53,7 @@ const Home = () => {
         if (search === "") {
           return pd;
         }else{
-         return pd.title.toLowerCase().includes(search);
+         return pd.title.toLowerCase().includes(search.toLocaleLowerCase());
         }
       })
       ?.map((item)=>{
